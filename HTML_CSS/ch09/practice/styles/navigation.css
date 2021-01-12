@@ -1,0 +1,13 @@
+#menu ul {
+    display: flex;
+    list-style-type: none;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#menu ul li {
+    display: block;
+    width: 150px;
+    margin-bottom: 0.5em;
+    background-color: burlywood;
+    color: white;
+}

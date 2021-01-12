@@ -1,0 +1,89 @@
+/*vertical menu*/
+.vertical_menu ul {
+    list-style-type: none;
+}
+
+.vertical_menu ul li {
+    width: 200px;
+    border: 2px solid blue;
+    margin-bottom: .5em;
+}
+
+.vertical_menu ul li a {
+    display: block;
+    text-decoration: none;
+    color: blue;
+    font-weight: bold;
+    padding: 0.25em 1em;
+}
+
+.vertical_menu ul li a:hover,
+.vertical_menu ul li a:focus {
+    background-color: cornflowerblue;
+}
+
+/*horizontal menu*/
+.horizontal_menu ul {
+    list-style-type: none;
+    margin: 0 0 1.5em 1.25em;
+}
+
+.horizontal_menu ul li {
+    width: 200px;
+    border: 2px solid blue;
+    margin-bottom: .5em;
+    float: left;
+}
+
+.horizontal_menu ul li a {
+    display: block;
+    text-decoration: none;
+    color: blue;
+    font-weight: bold;
+    padding: 0.25em 1em;
+}
+
+.horizontal_menu ul li a:hover,
+.horizontal_menu ul li a:focus {
+    background-color: cornflowerblue;
+}
+
+/*nested menu*/
+#nested_menu ul {
+    list-style-type: none;
+    position: relative;
+}
+
+#nested_menu ul li {
+    width: 200px;
+    border: 2px solid blue;
+    float: left;
+}
+
+#nested_menu ul li ul {
+    display: block;
+    text-decoration: none;
+    color: blue;
+    font-weight: bold;
+    padding: 0.25em 1em;
+}
+
+#nested_menu ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+}
+
+#nested_menu ul ul li {
+    float: none;
+}
+
+#nested_menu ul li:hover >ul {
+    display: block;
+}
+
+#nested_menu > ul::after {
+    content: "";
+    display: block;
+    clear: both;
+}
