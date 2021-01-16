@@ -64,6 +64,7 @@ header {
     background-image: -webkit-linear-gradient(30deg,#f6bb7e 0%, #f6bb73 30%, white 50%, #f6bb73 80%, #f6bb73 100%);
     /* padding-top: 20px; */
     grid-area: head;
+    padding: 1.5% 0;
 }
 
 header img {
@@ -277,7 +278,7 @@ footer p {
 
   header h2 {
     font-size: 1.625em; /* 26px */
-    margin: 0.4em 0 0.25em 0;
+    /* margin: 0.4em 0 0.25em 0; */
   }
   header h3 {
     font-size: 1em;
