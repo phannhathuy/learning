@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lenovo Yoga Slim 7 Pro</title>
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/tickets.css">
+    <link rel="stylesheet" href="plugin/SlickNav/slicknav.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="plugin/SlickNav/jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#nav_menu").slicknav({ prependTo: "#mobile_menu"});
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <img src="images/logo.gif" alt="This is logo" height="80">
+        <h2>Lenovo Yoga Slim 7 Pro AMD</h2>
+        <h3>A laptop based on <em class="shadow">3<sup>rd</sup></em> Mobile Zen CPUs</h3>
+    </header>
+
+    <nav id="mobile_menu"></nav>
+    <nav id="nav_menu">
+        <ul>
+            <li><a class="current" href="index.html">Home</a></li>
+            <!-- <li><a href="speakers.html">Speakers</a></li> -->
+            <li><a href="#">Speakers</a>
+                <ul>
+                    <li><a href="experts/toobin.html">Jeffrey Toobin</a></li>
+                    <li><a href="experts/sorkin.html">Andrew Sorkin</a></li>
+                    <li><a href="experts/chua.html">Amy Chua</a></li>
+                    <li><a href="experts/sampson.html">Scott Sampson</a></li>
+                </ul>
+            </li>
+            <li><a href="luncheons.html">Luncheons</a></li>
+            <li><a href="tickets.html">Get tickets</a></li>
+            <li class="lastitem"><a href="aboutus.html">About Us</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <article>
+            <!-- <h2 style="border: 0;">Accelerate everything you do</h2>
+            <p>
+                Master multitasking with the Yoga Slim 7 Pro. This stylish 14" ultraslim laptop is packed with power, offering the lightning-fast performance of AMD Ryzen&trade; 4000 Series Mobile Processors, combined with stunning 2.8K visuals, long-lasting battery life and a range of smart features that will help you make the most of your day.
+            </p>
+            <blockquote>&ldquo;Lenovo once again gives us a masterclass on how to make a world-class laptop for under a grand. There's very little reason to spend any more unless you need an ultra-high-resolution screen.&rdquo;</blockquote>
+            <h1>Review of the month</h1>
+            <h2>10th Thin Lightweight Octo Core Ryzen 9 Nomad 17h Battery</h2>
+            <img src="images/sampson_dinosaur.jpg" alt="Sampson Dinosaur">
+            <h3>December</h3>
+            <h3>Scott Sampson</h3>
+            <p>
+                Whether you’re looking for the latest smart technology or a powerful instrument to explore your creative side, Yoga’s got you covered. Available in sophisticated Slate Grey and Light Silver, the Yoga Slim 7 Pro is crafted from premium aluminum. Thoughtful details include a raised camera notch for easier opening with one hand, and a backlit keyboard with new dome-design keypads that enable a more comfortable typing experience. Make the absolute most of your visuals, with 2.8K clarity on a 14" display featuring 90% screen and a taller ratio aspect for optimized viewing when scrolling web pages or working on documents. Enjoy more spectacular color, brightness and contrast with Dolby Vision 100% sRGB color spectrum; and 90 Hz refresh rate ensures that your screen never lags. Complemented by powerful Dolby Atmos-optimized stereo speakers, the Yoga Slim 7 Pro offers immersive entertainment everywhere.
+            </p>
+            <h2>Different price tag</h2>
+            <nav>
+                <ul>
+                    <li>4600H ver: 1000$</li>
+                    <li>4800H ver: 1250$</li>
+                    <li>4900H ver: 1500$</li>
+                </ul>
+            </nav> -->
+            <h2 style="border: 0;">Order form</h2>
+            <form action="tickets/register_account.html" method="get" id="registration_form">
+            <fieldset>
+                <legend>Member Information</legend>
+                <label for="email">E-Mail:</label>
+                <input type="email" name="email" id="email" autofocus required><br>
+                <label for="fname">First Name:</label>
+                <input type="text" name="fname" id="fname" required><br>
+                <label for="lname">Last Name:</label>
+                <input type="text" name="lname" id="lname" required><br>
+                <label for="address">Address:</label>
+                <input type="text" name="address" id="address"><br>
+                <label for="city">City:</label>
+                <input type="text" name="city" id="city" required><br>
+                <label for="state">State:</label>
+                <input type="text" name="state" id="state" placeholder="2-character code" required><br>
+                <label for="zip">Zipcode:</label>
+                <input type="text" name="zip" id="zip" placeholder="5 or 9 digits" required
+                    pattern="^\d{5}(-/d{4})?$"><br>
+                <label for="phone">Phone Number:</label>
+                <input type="text" name="phone" id="phone" placeholder="999-999-9999"
+                    pattern="|d{3}[-\]\d{3}[-\]\d{4}"><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Order Information</legend>
+                <label for="order_type">Order Type:</label>
+                <select name="order_type" id="order_type">
+                    <option value="member_package">Member Package</option>
+                    <option value="donor_package">Donor Package</option>
+                    <option value="single_ticket">Single Ticket</option>
+                </select><br>
+                <label for="number_tickets">Number of Tickets:</label>
+                <input type="text" name="number_tickets" id="number_tickets" placeholder="Number of single tickets"
+                    min="1"><br>
+            </fieldset>
+
+            <fieldset id="pay_field">
+                <legend>Payment Method</legend>
+                <input type="radio" name="payment_method" id="payment_method1" value="bill_me">
+                <label for="payment_method1">Bill Me</label>
+                <input type="radio" name="payment_method" id="payment_method2" value="credit_card">
+                <label for="payment_method2">Credit Card</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Credit Card Information</legend>
+                <label for="card_type">Card Type:</label>
+                <select name="card_type" id="card_type">
+                    <option value="visa">Visa</option>
+                    <option value="mastercard">MasterCard</option>
+                    <option value="discover">Discover</option>
+                </select><br>
+                <label for="card_number">Card Number:</label>
+                <input type="text" name="card_number" id="card_number" placeholder="16 digits" required
+                    pattern="\d{16}"><br>
+                <label for="expiration_date">Expiration date:</label>
+                <select name="month" id="month">
+                    <option value="january">January</option>
+                    <option value="february">February</option>
+                    <option value="march">March</option>
+                    <option value="april">April</option>
+                    <option value="may">May</option>
+                    <option value="june">June</option>
+                    <option value="july">July</option>
+                    <option value="august">August</option>
+                    <option value="september">September</option>
+                    <option value="october">October</option>
+                    <option value="november">November</option>
+                    <option value="december">December</option>
+                </select>
+                <select name="year" id="year">
+                    <option value="2017">2017</option>
+                    <option value="2018">2018</option>
+                    <option value="2019">2019</option>
+                    <option value="2020">2020</option>
+                    <option value="2021">2021</option>
+                </select>
+            </fieldset>
+
+            <fieldset id="buttons">
+                <legend>Submit Your Order</legend>
+                <label id="blank">&nbsp;</label>
+                <input type="submit" id="submit" value="Submit">
+                <input type="reset" id="reset" value="Reset Fields"><br>
+            </fieldset>
+        </form>
+        </article>
+        
+        <aside>
+            <h2>Tech Experts</h2>
+            <nav>
+                <ul>
+                    <li><h3>Member 1<br><a href="experts/chua.html">Amy Chua</a></h3>
+                        <img src="images/chua75.jpg" alt="Amy Chua"></li>
+                    <li><h3>Member 2<br><a href="experts/toobin.html">Jeffrey Toobin</a></h3>
+                        <img src="images/toobin75.jpg" alt="Jeffrey Toobin"></li>
+                    <li><h3>Member 3<br><a href="experts/sorkin.html">Andrew Sorkin</a></h3>
+                        <img src="images/sorkin75.jpg" alt="Andrew Ross Sorkin"></li>
+                    <li><h3>Member 4<br><a href="experts/eire.html">Carlos Eire</a></h3>
+                        <img src="images/eire75.jpg" alt="Carlos Eire"></li>
+                    <li> <h3>Member 5<br><a href="experts/sampson.html">Scott Sampson</a></h3>
+                        <img src="images/sampson75.jpg" alt="Scott Sampson"></li>
+                    <!-- <li><h3>Member 6<br><a href="experts/tynan.html">Ronan Tynan</a></h3>
+                        <img src="images/tynan75.jpg" alt="Ronan Tynan"></li>
+                </ul> -->
+            </nav>
+        </aside>
+        
+    </main>    
+
+    <footer>
+        <p>&copy; Copyright 2020 Lenovo. All rights reserved.</p>    
+    </footer>
+    
+</body>   
+</html>

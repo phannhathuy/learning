@@ -132,21 +132,26 @@ header h3 {
 	list-style: none;
 	position: relative;    /* So the first submenu can be positioned within the main menu */
 }
+
 #nav_menu ul li {
 	float: left;
 }
+
 #nav_menu ul ul {
 	display: none;         /* Don't display submenu until hover of the li element */
 	position: absolute;
 	top: 100%;             /* Position the submenu at the bottom of the main menu */
 }
+
 #nav_menu ul ul li {
 	float: none;           /* Display the submenus vertically */
   width: 20%;
 }
+
 #nav_menu ul li:hover > ul {
 	display: block;        /* Display the submenu on hover of the li element */
 }
+
 #nav_menu > ul::after {
 	content: "";
 	display: block;
@@ -192,7 +197,7 @@ article h2 {
     font-size: 130%;
     color: #800000;
     padding-top: 1%;
-    /* border-top: 3px solid #932420; */
+    border-top: 3px solid #932420;
 }
 
 article h3 {
@@ -211,35 +216,7 @@ article p {
 article ul li {
   list-style-position: inside;
 }
-
-/* style for the table */
-table {
-  border-top: 3px solid #932420;
-  border-bottom: 3px solid #932420;
-  border-collapse: collapse;
-}
-
-th, td {
-  padding: .2em .7em;
-}
-
-table .lr {
-  border-bottom: 3px solid #932420;
-}
-
-table .lr1 {
-  border-top: 3px solid #932420;
-}
-
-tfoot .right {
-  font-weight: bold;
-  text-align: right;
-}
-
-td:last-of-type  {
-  text-align: right;
-}
-
+  
 /* style for the sidebar */
 /* =========================== */
 aside {
@@ -275,10 +252,69 @@ footer{
     background-color: #931420;
     grid-area: foot;
 }
+
 footer p {
     color: white;
     text-align: center;
     padding: 1em 0;
+}
+
+/* style for form */
+fieldset {
+  margin-bottom: .5em;
+  padding: .5em 1em;
+}
+
+legend {
+  color: black;
+  font-weight: bold;
+  margin-bottom: .5em;
+}
+
+label {
+  float: left;
+  width: 12em;
+  text-align: right;
+}
+
+input, select {
+  width: 15em;
+  margin-left: .5em;
+  margin-bottom: .5em;
+}
+
+input:required, input:invalid, input[required] {
+  border: 2px solid #800000;
+}
+
+input:valid {
+  border: 1px solid black;
+}
+
+/* br {
+  clear: both;
+} */
+
+fieldset#pay_field label {
+  float: none;
+  width: auto;
+}
+
+fieldset#pay_field input {
+  margin-left: 3em;
+  width: auto;
+}
+
+select#month {
+  width: 7em;
+}
+
+select#year {
+  width: 5em;
+}
+
+fieldset#buttons input {
+  width: 10em;
 }
 
 /* hide the mobile menu initially */
@@ -399,22 +435,25 @@ footer p {
   aside ul li h3 {
     flex-basis: 100%;
   }
+
+  label#blank {
+    display: none;
+  }
 }
 
 /* mobile portrait to mobile landscape */
 @media only screen and (max-width: 479px) {
   header h2 {
-    font-size: 1.375em; /* 22px */
-    text-align: center;
+    font-size: 1.375em;
   }
 
   header h3 {
-    font-size: 0.8125em; /* 13px */
+    font-size: 0.8125em; 
     text-align: center;
   }
 
   p {
-    font-size: 0.875em; /* 14px */
+    font-size: 0.875em;
   }
 
   article h1 {
@@ -434,34 +473,11 @@ footer p {
   }
 
   aside li {
-    font-size: 0.875em; /* 14px */
+    font-size: 0.875em;
   }
 
-    /* table responsive */
-  th, td {
-    display: block;
-    text-align: right;
-  }
-
-  thead {
-    display: none;
-  }
-
-  table .lr {
-    border: none;
-  }
-
-  tbody td[headers="hdr_cost"] {
-    border-bottom: 1px solid #932420;
-  }
-
-  tfoot {
-    border-top: 2px solid #932420;
-  }
-
-  td[headers="hdr_year"] {
-    border-bottom: 3px solid #932420;
-  }
+  /* label {
+    margin-left: 0.5em;
+    text-align: left;
+  } */
 }
-
-
