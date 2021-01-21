@@ -79,12 +79,13 @@
                 <label for="city">City:</label>
                 <input type="text" name="city" id="city" required><br>
                 <label for="state">State:</label>
-                <input type="text" name="state" id="state" placeholder="2-character code" required><br>
+                <input type="text" name="state" id="state" placeholder="2-character code" required
+                    pattern="[A-Za-z]{2}"><br>
                 <label for="zip">Zipcode:</label>
                 <input type="text" name="zip" id="zip" placeholder="5 or 9 digits" required
                     pattern="^\d{5}(-/d{4})?$"><br>
                 <label for="phone">Phone Number:</label>
-                <input type="text" name="phone" id="phone" placeholder="999-999-9999"
+                <input type="tel" name="phone" id="phone" placeholder="999-999-9999"
                     pattern="|d{3}[-\]\d{3}[-\]\d{4}"><br>
             </fieldset>
 
@@ -97,7 +98,7 @@
                     <option value="single_ticket">Single Ticket</option>
                 </select><br>
                 <label for="number_tickets">Number of Tickets:</label>
-                <input type="text" name="number_tickets" id="number_tickets" placeholder="Number of single tickets"
+                <input type="number" name="number_tickets" id="number_tickets" placeholder="Number of single tickets"
                     min="1"><br>
             </fieldset>
 
@@ -168,8 +169,8 @@
                     <li> <h3>Member 5<br><a href="experts/sampson.html">Scott Sampson</a></h3>
                         <img src="images/sampson75.jpg" alt="Scott Sampson"></li>
                     <!-- <li><h3>Member 6<br><a href="experts/tynan.html">Ronan Tynan</a></h3>
-                        <img src="images/tynan75.jpg" alt="Ronan Tynan"></li>
-                </ul> -->
+                        <img src="images/tynan75.jpg" alt="Ronan Tynan"></li> -->
+                </ul>
             </nav>
         </aside>
         
