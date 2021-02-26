@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Swap a and b</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles/main.css">
+
+        <script>
+            var a = parseInt(prompt("Enter a: "));
+            var b = parseInt(prompt("Enter b: "));
+            var c;
+            if (isNaN(a) || isNaN(b)) {
+                alert("Please input valid data");
+            } else {
+                c = b;
+                b = a;
+                a = c;
+                document.write("a = " + a + "<br>");
+                document.write("b = " + b)
+            };            
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Mile per Gallon application</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles/main.css">
+
+        <script>
+            var score1, score2, score3;
+            score1 = window.prompt("Enter score 1:",);
+            score1 = window.parseInt(score1);
+            score2 = window.prompt("Enter score 2:",);
+            score2 = window.parseInt(score2);
+            score3 = window.prompt("Enter score 3:",);
+            score3 = window.parseInt(score3);
+            var testScore = (score1 + score2 + score3)/3;
+            testScore = parseFloat(testScore);
+            testScore = testScore.toFixed(2);
+            alert("Test Score = " + testScore);
+        </script>
+    </head>
+    <body>
+        <h1>The Test Scores App</h1>
+        <script>
+            document.write("Score 1 = " + score1);
+            document.write("<br>");
+            document.write("Score 1 = " + score2);
+            document.write("<br>");
+            document.write("Score 1 = " + score3);
+            document.write("<br>");
+            document.write("Test Score = " + testScore);
+            document.write("<br>");
+            document.write("Tks for using App ");
+        </script>
+    </body>
+</html>
