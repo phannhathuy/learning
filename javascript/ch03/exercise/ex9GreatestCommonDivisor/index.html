@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <title>Average and rank application</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/main.css">
+
+    <script>
+        "use strict";
+        var a = parseFloat(prompt("Input integer number a: "));
+        var b = parseFloat(prompt("Input integer number b: "));
+        if (!Number.isInteger(a) || !Number.isInteger(b)) {
+            alert("Please input valid data")
+        } else {
+            var temp, tempa = a, tempb = b;
+            while (tempb != 0) {
+                temp = tempa % tempb;
+                tempa = tempb;
+                tempb = temp;
+            }
+            alert("The greatest common divisor of " + a + " and " + b + " = " + tempa);
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

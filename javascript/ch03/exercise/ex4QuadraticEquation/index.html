@@ -1,40 +1,43 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>ax2 + bx + c = 0 application</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="styles/main.css">
 
-        <script>
-            var a = parseFloat(prompt("Input a: "));
-            var b = parseFloat(prompt("Input b: "));
-            var c = parseFloat(prompt("Input c: "));
-            if (isNaN(a) || isNaN(b) || isNaN(c)) {
-                alert("Please input valid data");
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>ax2 + bx + c = 0 application</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/main.css">
+
+    <script>
+        var a = parseFloat(prompt("Input a: "));
+        var b = parseFloat(prompt("Input b: "));
+        var c = parseFloat(prompt("Input c: "));
+        if (isNaN(a) || isNaN(b) || isNaN(c)) {
+            alert("Please input valid data");
+        } else {
+            var d = parseFloat(b * b - 4 * a * c);
+            if (d < 0) {
+                alert("The equation has no real root");
+            } else if (d == 0) {
+                var x = parseFloat(-b / (2 * a));
+                x = x.toFixed(2);
+                alert("The equation has one real root\nx = x1 = x2 = " + x);
             } else {
-                var d = parseFloat(b*b - 4*a*c);
-                if (d < 0) {
-                    alert("The equation has no real root");
-                } else if (d == 0) {
-                    var x = parseFloat(-b / (2*a));
-                    x = x.toFixed(2);
-                    alert("The equation has one real root\nx = x1 = x2 = " + x);
-                } else {
-                    var d1 = Math.sqrt(d);
-                    var x1 = parseFloat((-b - d1) / (2*a));
-                    var x2 = parseFloat((-b + d1) / (2*a));
-                    x1 = x1.toFixed(2);
-                    x2 = x2.toFixed(2);
-                    alert("The equation has two different real root \nx1 = " + x1 + "\nx2 = " +x2);
-                };
-            };   
-        </script>
-    </head>
-    <body>
+                var d1 = Math.sqrt(d);
+                var x1 = parseFloat((-b - d1) / (2 * a));
+                var x2 = parseFloat((-b + d1) / (2 * a));
+                x1 = x1.toFixed(2);
+                x2 = x2.toFixed(2);
+                alert("The equation has two different real root \nx1 = " + x1 + "\nx2 = " + x2);
+            }
+        }
+    </script>
+</head>
 
-    </body>
+<body>
+
+</body>
+
 </html>
