@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var array = [];
+        for (var i = 2; i <= 100; i++) {
+            var c = 0;
+            for (var j = 2; j <= i; j++) {
+                if (i % j == 0) {
+                    c++;
+                }
+                if (c > 1) {
+                    break;
+                }
+            }
+            array[array.length] = i;
+
+        }
+        for (var i = 0; i < array.length; i++) {
+            document.write(array[i] + "<br>");
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
