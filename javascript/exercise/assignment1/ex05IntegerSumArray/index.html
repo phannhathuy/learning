@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Sum of Integer</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/main.css">
+
+    <script>
+        var a = parseInt(prompt("Input number you want to start to calculate: "));
+        var b = parseInt(prompt("Input amount of numbers you want to sum: "));
+        var s = 0;
+        var c = a;
+        if (isNaN(a) || isNaN(b)) {
+            alert("Please input valid data");
+        } else {
+            for (i = 1; i <= b; i++) {
+                s += a;
+                a++;
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <script>
+        alert("Sum of " + b + " integer numbers from " + c + " = " + s);
+
+    </script>
+
+</body>
+
+</html>

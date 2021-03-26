@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>ax + b = 0 application</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/main.css">
+
+    <script>
+        var a = parseFloat(prompt("Input a: "));
+        var b = parseFloat(prompt("Input b: "));
+        if (isNaN(a) || isNaN(b)) {
+            alert("Please input valid data");
+        } else if (a == 0) {
+            if (b != 0) {
+                alert("Equation has no solution");
+            } else {
+                alert("Euqation has infinite solution");
+            }
+        } else {
+            var x = parseFloat(-b / a);
+            x = x.toFixed(2);
+            alert(a + "x + " + b + "= 0\nx = " + x);
+        }
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

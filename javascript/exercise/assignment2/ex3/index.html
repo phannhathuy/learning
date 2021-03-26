@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <title>Ex 3</title> 
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/main.css">
+
+    <script>
+        "use strict";
+        var nameList = [];
+        while (true) {
+            var entry = prompt("Enter username: ");
+            if (!entry) {
+                break;
+            }
+            nameList.push(entry);
+        }
+        if (confirm("Do you want to print username list to the screen? ")) {
+            alert(nameList.slice().sort().join("\n"));
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

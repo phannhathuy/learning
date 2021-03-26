@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Average and rank application</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/main.css">
+
+    <script>
+        var m = parseFloat(prompt("Input math score: "));
+        var p = parseFloat(prompt("Input physics score: "));
+        var c = parseFloat(prompt("Input chemistry score: "));
+        if (isNaN(m) || isNaN(p) || isNaN(c)) {
+            alert("Please input valid data");
+        } else {
+            var avg = parseFloat((m + p + c) / 3);
+            var r;
+            avg = avg.toFixed(2);
+            if (avg < 5) {
+                r = "D";
+            } else if (avg < 6.5) {
+                r = "C";
+            } else if (avg < 8) {
+                r = "B";
+            } else {
+                r = "A";
+            }
+            alert("Average score: " + avg + "\nRank: " + r);
+        }
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
