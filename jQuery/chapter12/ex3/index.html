@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js/jquery-3.6.0.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="./js/bootstrap.js"></script>
+    <script src="./js/toastr.js"></script>
+    <link rel="stylesheet" href="./styles/bootstrap.css">
+    <link rel="stylesheet" href="./styles/toastr.css">
+    <script src="./js/order.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-8">
+                <div class="row">
+                    Your Pizza
+                </div>
+                <div class="row data-imgs">
+                </div>
+            </div>
+            <div  class="col-4">
+                <div class="row">
+                    <p class="col-4">Pizza Order: </p>
+                    <p class="col-4 total-price">0</p>
+                    <div class="col-4">
+                        <button type="button" class="btn btn-warning ">Reset pizza</button>
+                    </div>
+                </div>
+                <table class="table">
+                    <tbody>
+                     
+                      <tr>
+                        <td scope="row"> 
+                          Total:
+                        </td>
+                        <td class="total-price" id="price-check">
+                           0
+                        </td>
+                      </tr>
+                      <tr>
+                        <td scope="row"> 
+                            <button type="button" class="btn btn-info" disabled>Checkout</button>
+                        </td>
+                        
+                      </tr>
+                    </tbody>
+                  </table>   
+            </div>
+        </div>
+    </div>
+</body>
+</html>
