@@ -1,0 +1,505 @@
+/* .App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
+
+* {
+  padding: 0;
+  margin: 0;
+}
+html {
+  font-size: 16px;
+}
+
+body {
+  font-size: 100%;
+  max-width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  box-sizing: border-box;
+}
+.color {
+  width: 100%;
+  height: 3px;
+  background-color: #ca3438;
+}
+nav {
+  margin: 0.5em;
+}
+a {
+  color: black;
+  text-decoration: none;
+  width: 100%;
+  padding-top: 0.5em;
+}
+.hover {
+  display: none;
+  width: 100%;
+  /* margin-top: 150%; */
+}
+
+a:hover {
+  color: #ca3438;
+}
+li {
+  list-style-type: none;
+
+  display: block;
+}
+.list-item {
+  margin-top: 0.7em;
+  padding-bottom: 0.2em;
+  padding-right: 0.2em;
+  position: relative;
+  margin-bottom: 0.5em;
+}
+li.list-item-logo {
+  padding-right: 30px;
+  width: 229px;
+  height: 47px;
+  display: block;
+  float: left;
+  text-indent: -1987em;
+  background: url(https://iviettech.vn/wp-content/themes/viettech/img/front/sprite.png)
+    no-repeat -10px -473px scroll;
+  margin-top: 12px;
+  margin-bottom: 2px;
+}
+ul.nav-list {
+  display: flex;
+  justify-content: center;
+}
+.fa-chevron-down {
+  padding-left: 35%;
+}
+ul.nav-list > li.list-item {
+  padding-top: 1.5em;
+  position: relative;
+}
+ul.nav-list > li.list-item > a {
+  border-right: 1px solid #ca3438;
+  padding-right: 0.5em;
+}
+ul ul {
+  display: none;
+}
+nav > ul > li:hover > ul {
+  display: block;
+  position: absolute;
+  top: 110%;
+}
+nav > ul > li:hover .hover {
+  position: absolute;
+  display: block;
+  top: 110%;
+}
+nav ul ul li {
+  border-bottom: 1px solid #ca3438;
+  position: relative;
+  width: 10rem;
+}
+.color-item {
+  margin: 0;
+  height: 5px;
+  width: 100%;
+  background-color: yellow;
+}
+ul ul {
+  background-color: white;
+}
+nav ul ul li li {
+  min-width: 13rem;
+}
+nav ul ul li:hover > ul {
+  position: absolute;
+  display: block;
+  left: 100%;
+  top: -80%;
+}
+li li:hover {
+  background: linear-gradient(
+    to left,
+    rgba(153, 100, 39, 0.616),
+    rgba(148, 148, 138, 0)
+  );
+  /* background : -moz-linear-gradient(left, red, yellow);
+  background : -webkit-linear-gradient(left, red, yellow);
+  background : -o-linear-gradient(left, red, yellow); */
+}
+.banner {
+  margin: 0 auto;
+  width: 100%;
+  margin-top: 0px;
+  height: 300px;
+  background: url(https://iviettech.vn/wp-content/uploads/2015/10/hoc-lap-trinhFILEminimizer.jpg);
+  background-repeat: no-repeat;
+}
+/* /////////// */
+.education {
+  background-color: #ca3438;
+  padding: 10% auto;
+}
+i.fa-pen,
+i.fa-graduation-cap {
+  padding-left: 0.5em;
+  padding-top: 0.5em;
+  display: inline-block;
+  margin-right: 0.3em;
+  width: 25px;
+  height: 25px;
+  border: 1px solid;
+  border-radius: 50%;
+  float: left;
+  background-color: #ff7071;
+}
+input,
+textarea,
+select {
+  border: none;
+  outline: none;
+  background-color: #ff707088;
+  color: white;
+}
+
+::placeholder {
+  color: white;
+  opacity: 1;
+}
+.program-body,
+form {
+  clear: both;
+}
+.title {
+  padding: 0.5em;
+}
+form,
+.program-body {
+  border-top: 1px dotted rgba(54, 59, 59, 0.644);
+  margin: 0.5em;
+}
+.register-program {
+  box-sizing: border-box;
+  display: flex;
+  margin: 0 auto;
+  background-color: #ca3438;
+  color: white;
+  height: 380px;
+  width: 60%;
+}
+.register {
+  margin-top: 0.5em;
+  height: 310px;
+  width: 100%;
+  flex-basis: 30%;
+  padding: 1em;
+  border: 2px dotted white;
+  border-radius: 4px;
+}
+form {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  padding: 0.2em;
+}
+form input,
+form select {
+  margin: 0.3em;
+  width: 230px;
+  height: 20px;
+}
+.program {
+  border: 2px dotted white;
+  margin-left: 2em;
+  flex-basis: 60%;
+  width: 100%;
+  padding: 1em;
+  margin-top: 0.5em;
+  border-radius: 4px;
+  height: 310px;
+}
+.program-body {
+  display: flex;
+}
+.program-item {
+  padding: 1em;
+  width: 140px;
+}
+.program img {
+  width: 115px;
+  height: 115px;
+  border: 2px dotted white;
+  border-radius: 50%;
+  padding: 3px;
+}
+.btn-dk {
+  background-color: #f89800;
+  color: white;
+  height: 35px;
+  border: none;
+  font-weight: bold;
+}
+#text-area {
+  resize: none;
+}
+/* ///// */
+.introduction-content .icon {
+  background: url(https://iviettech.vn/wp-content/themes/viettech/img/front/sprite.png)
+    no-repeat -20px -158px scroll;
+  width: 229px;
+  height: 47px;
+  display: block;
+}
+.introduction-content input {
+  background-color: #c5450c;
+  padding: 0.3em;
+  border: none;
+  border-radius: 4px;
+}
+.introduction {
+  margin: 4rem;
+}
+.introduction img {
+  width: 259px;
+  height: 259px;
+
+  border-radius: 50%;
+  padding: 3px;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.295);
+}
+.div-introduction {
+  display: flex;
+  width: 70%;
+  margin: 0 auto;
+}
+.introduction img,
+.introduction-content,
+.introduction {
+  margin-right: 2rem;
+}
+.introduction input {
+  margin-left: 70%;
+  /* text-align: end; */
+}
+/* ========================= */
+.school-block {
+  padding-top: 1rem;
+  background-color: rgb(202, 52, 56);
+  color: white;
+}
+.school-calendar-title,
+.school-notice-title {
+  border-bottom: 1px dotted rgba(255, 255, 255, 0.281);
+  padding: 10px;
+}
+.school {
+  display: flex;
+  width: 70%;
+  margin: 1rem auto;
+  justify-content: space-evenly;
+}
+.school-calendar-content {
+  margin: 1rem;
+}
+
+.school p {
+  font-size: 80%;
+}
+.school-item img {
+  width: 70px;
+  height: 70px;
+  margin-right: 1rem;
+}
+.school-item {
+  margin: 0.5rem;
+  display: flex;
+}
+.school-calendar-content {
+  display: flex;
+}
+.school-notice {
+  margin-left: 3rem;
+  border: 1px dotted rgb(255, 255, 255);
+  padding: 0.5rem;
+}
+.school-notice .School-item {
+  border-bottom: 1px dotted rgba(255, 255, 255, 0.281);
+  padding: 0.5rem;
+}
+.school-notice .School-item img {
+  width: 50px;
+  height: 50px;
+  margin-right: 1rem;
+}
+
+/* +++++++++++++++ */
+
+.active {
+  border: 3px solid orange;
+}
+/* //////////////////////////////////////// */
+.news,
+.reviews-job {
+  display: flex;
+  width: 65%;
+  margin: 1rem auto;
+}
+.img-news {
+  width: 350px;
+  height: 200px;
+  margin-right: 1rem;
+}
+.news-left {
+  width: 58%;
+  margin-right: 2%;
+}
+.fa-newspaper,
+.fa-search {
+  height: 18px;
+  padding: 7px;
+  border-radius: 50%;
+  background-color: rgb(180, 24, 141);
+  color: white;
+}
+.news-left-header,
+.news-right-header {
+  display: flex;
+  border-bottom: 1px dotted rgba(0, 0, 0, 0.26);
+  padding-bottom: 10px;
+  margin: 1rem;
+}
+.news-left-content {
+  display: flex;
+}
+.loop .fa-clock {
+  color: rgba(0, 0, 0, 0.322);
+}
+.news-left button {
+  margin-left: 50%;
+  background-color: orange;
+  color: white;
+  border: none;
+  padding: 5px;
+  box-shadow: 3px 3px 3px rgba(255, 166, 0, 0.699);
+}
+.trendold {
+  margin-top: 1rem;
+}
+.trendold h3,
+.review-header,
+.job-header {
+  border-bottom: 2px dotted rgba(0, 0, 0, 0.164);
+  padding-bottom: 5px;
+}
+.trendold .trendold-loop {
+  display: flex;
+  margin-top: 1rem;
+}
+.trendold .trendold-loop img {
+  width: 100px;
+  height: 100px;
+  margin-right: 1rem;
+}
+.loop {
+  display: flex;
+}
+.newsright {
+  width: 40%;
+}
+.newsright .loop {
+  margin: 1rem;
+}
+.newsright .loop img {
+  width: 70px;
+  height: 70px;
+  border-radius: 10px;
+  margin-right: 0.5rem;
+}
+.job {
+  width: 40%;
+  margin-left: 2%;
+}
+
+.review {
+  background-color: #eeeeee;
+  width: 56%;
+  margin-right: 1rem;
+}
+.review-content {
+  display: flex;
+  padding: 1rem;
+}
+.review-content img,
+.review-foot img {
+  width: 60px;
+  height: 60px;
+  border: 5px solid rgb(255, 0, 0);
+  border-radius: 50%;
+  margin-right: 2rem;
+}
+.review-content img {
+  width: 80px;
+  height: 80px;
+}
+.author {
+  color: blue;
+  margin: 0.5rem;
+}
+.tuyendung-item {
+  display: flex;
+  margin-bottom: 1rem;
+}
+.tuyendung-item h3 {
+  color: #ca3438;
+  margin-top: 0.5rem;
+}
+.tuyendung-item img {
+  width: 100px;
+  height: 100px;
+}
+.footer {
+  width: 100%;
+  background-color: #4b4a4a71;
+  color: white;
+}
+.footer .content {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1rem;
+}
+.job-header {
+  display: flex;
+}
